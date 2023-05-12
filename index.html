@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Items for Sale</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <h1>School items for Sale</h1>
+    <div class="container">
+        <div class="radio-buttons">
+            <input type="radio" id="book" name="item" value="book" checked>
+            <label for="book">Book ($10)</label><br>
+            <input type="radio" id="pen" name="item" value="pen">
+            <label for="pen">Pen ($2)</label><br>
+            <input type="radio" id="bag" name="item" value="bag">
+            <label for="bag">Bag ($15)</label><br>
+            <input type="radio" id="hat" name="item" value="hat">
+            <label for="hat">Hat ($8)</label><br>
+        </div>
+        <!-- Add a div element to wrap the image and the description -->
+        <div class="item-display">
+            <img src="https://th.bing.com/th/id/R.71fbff22e9e33d35ebec211cf9a0db51?rik=p1wJ5MaRFzI34A&riu=http%3a%2f%2fmedia.ruralradio.co%2fwordpress%2f2014%2f10%2fThinkstock_Book.jpg&ehk=dFML13JkNwirLIC2FSmIqgn%2fzDhVjdBYBkIxrmvPuiE%3d&risl=&pid=ImgRaw&r=0" id="image" alt="Item image">
+            <p id="description">To write all those important and neccassry notes. Also Books are awesome. They teach you stuff, make you think, and entertain you. They also help you with your language skills, which are good for school and life. Buy a book and have fun!</p>
+        </div>
+    </div>
+    <div class="quantity">
+        <label for="quantity">Enter quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" value="0">
+        <button id="compute">Compute</button>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

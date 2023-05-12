@@ -1,0 +1,74 @@
+html {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: linear-gradient(
+    to bottom right, rgba(255, 228, 196, 0.671), rgba(255, 192, 203, 0.671));
+
+}
+
+h1{
+  color:#755e5b;
+  font-size: xxx-large;
+  text-shadow: 1px 0px 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.container {
+  display: flex;
+}
+
+.radio-buttons {
+  width: 25%;
+  color: rgb(5, 87, 12);
+}
+
+
+/* Add flexbox styles to the item-display div */
+.item-display {
+  width: 50%;
+  display: flex;
+  align-items:initial ;
+}
+
+
+button {
+  text-transform: capitalize;  
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 204, 255, 0);
+  border-style: hidden;
+  border-radius: 0px;
+  padding: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+button:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 192, 203, 0.767);
+  border-style: hidden;
+  transition:ease-out;
+}
+img {
+  width: 270px;
+  height: 250px;
+  padding-right: 35px;
+}
+
+.quantity {
+  margin-top: 10px;
+}
+
+/* Media query for screen width less than 600px */
+@media screen and (max-width: 600px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .radio-buttons {
+      width: 100%;
+  }
+
+  .item-display {
+    width: 100%;
+    flex-direction: column;
+}
+}
